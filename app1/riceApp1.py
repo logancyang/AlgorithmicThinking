@@ -127,6 +127,10 @@ def in_degree_distribution(digraph):
     return in_degree_dist
 
 def normalize(distribution):
+    """
+    normalize a distribution (a dict)
+    """
+    
     values = distribution.values()
     total = sum(values)
     new_values = [float(x)/total for x in values]
